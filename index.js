@@ -71,11 +71,7 @@ and set the Authorised redirect URI to ${ensure_final_slash(cfg_base_url)}auth/c
                 label: "Google Client Secret",
                 type: "String",
                 required: true,
-				{
-                name: "agentCode",
-                label: "Agent Code",
-                type: "String",
-                required: true,
+				
               },
             ],
           }),
