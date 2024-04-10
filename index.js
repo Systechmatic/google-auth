@@ -2,7 +2,7 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const User = require("@saltcorn/data/models/user");
 const Workflow = require("@saltcorn/data/models/workflow");
 const Form = require("@saltcorn/data/models/form");
-const db = require("@saltcorn/data/db");
+const db = require("@saltcorn/data/db"); // Import the db module here
 
 const { getState } = require("@saltcorn/data/db/state"); // Import getState here
 
