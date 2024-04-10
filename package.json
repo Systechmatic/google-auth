@@ -7,6 +7,6 @@
     "@saltcorn/data": "^0.3.0",
     "passport-google-oauth20": "^2.0.0"
   },
-  "author": "Tom Nielsen",
+  "author": "Tom Nielsen, Changes by Systechmatic",
   "license": "MIT"
 }
