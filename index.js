@@ -29,7 +29,6 @@ const authentication = (config) => {
             email = profile.emails[0].value;
           User.findOrCreateByAttribute("googleId", profile.id, {
             email,
-			agent_code: agentCode,
             role: 99, // Set the user's Saltcorn access to role 99 (New Account)
           }).then((u) => {
             if (!u) return cb(null, false);
@@ -69,6 +68,12 @@ and set the Authorised redirect URI to ${ensure_final_slash(cfg_base_url)}auth/c
               {
                 name: "clientSecret",
                 label: "Google Client Secret",
+                type: "String",
+				},
+              {
+                required: true,
+				name: "agentCode",
+                label: "Agent Code",
                 type: "String",
                 required: true,
 				
